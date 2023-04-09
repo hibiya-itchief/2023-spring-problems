@@ -16,10 +16,65 @@
 
       gtag("config", "G-4ZVV48HJFZ");
     </script>
-    <title>解答</title>
+
+  <title>解答</title>
   </head>
-  <body>
-    <p>€→余り ¥→累乗 $→n進数</p>
-    <p>として計算してみましょう</p>
+  <body bgcolor=#005eff>
+    <style>
+      #F{
+         display: none;
+      }
+      .F{
+          display: inline-block;
+          background: #b6beff;
+          padding: 5px 10px;
+          cursor: pointer;
+      }
+      .G{
+          background: #9bd588b3;
+          height: 100px;
+          display: none;
+      }
+      #F:checked+label+.G{
+          display: block;
+      }
+      </style>
+      <input type="checkbox" id="F">
+      <label class="F" for="F">解答を表示</label>
+      <div class="G">
+        <p>9$8=11</p>
+        <p>11€7=2</p>  
+        <p>2¥6=100</p>
+      </div>
+  <p></p>
+    <style>
+      #E{
+         display: none;
+      }
+      .E{
+          display: inline-block;
+          background: #b6beff;           
+          padding: 5px 10px;
+          cursor: pointer;
+      }
+      .D{
+        background: #9bd588b3;
+        height: 200px;
+        display: none;
+      }
+      #E:checked+label+.D{
+          display: block;
+      }
+      </style>
+      <input type="checkbox" id="E">
+      <label class="E" for="E">解説を表示</label>        
+      <div class="D">
+        <p>A€B→AをBで割った余り</p>
+        <p>A¥B→AのB乗</p>
+        <p>A$B→AをB進数で表す</p>
+        <p>この法則にしたがって計算してみましょう</p>
+        <p>最後の２を６乗した後の数値を８進数で表すことをお忘れなく!!</p>
+      </div>
+    
   </body>
 </html>
