@@ -87,8 +87,8 @@
     </div>
     <pre style='margin-left:2em;'>
 ss = 58.6 # ここには友達の偏差値を入れる
-mx = 58.6
-mn = 80.0
+mn = 58.6
+mx = 80.0
 ask = 0
 i = 0
 
@@ -98,9 +98,9 @@ while True:
   if ask == ss:
     break
   elif ask < ss:
-    mn = ask + 1
+    mn = ask + 0.1
   else:
-    mx = ask - 1
+    mx = ask - 0.1
 print(i) # 結果が表示される
     </pre>
     このコードを実行すると、最終的に何回かかったかが表示されます。<br>
